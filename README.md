@@ -1,5 +1,6 @@
 # Assignment 2 for MFC Stats + Prob
-Kalman and particle filter implementations.
+Kalman and particle filter implementations. 
+TODO: Add figure
 
 ## Dependencies
 * numpy (v2.1.1)
