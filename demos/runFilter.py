@@ -86,17 +86,3 @@ if __name__ == "__main__":
     
     print(np.mean(likelihoods, axis=0))
     print(np.std(likelihoods, axis=0))
-    
-    #%%
-    import matplotlib.pyplot as plt
-    
-    diff = np.linalg.norm(klogli - np.mean(likelihoods, axis=0))  # Compute L2 norm
-    particles = np.array(numParticlesLst)
-    
-    plt.figure()
-    plt.plot(particles, diff, marker='o')
-    plt.xlabel("Number of Particles")
-    plt.ylabel("L2 Norm")
-    plt.title("L2 Norm of Difference vs. Number of Particles")
-    plt.grid(True)
-    plt.show()
